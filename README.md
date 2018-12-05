@@ -7,7 +7,7 @@ __Move into the vimeo folder__
 
 cd vimeo
 
-__Since there is a single dependency, you can type in the following to get the app running:__
+__Since there is a single dependency, you can type in the following to get the app running (please make sure you have nmp installed):__
 
 npm install
 
