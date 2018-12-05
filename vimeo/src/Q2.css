@@ -1,0 +1,148 @@
+.carousel {
+    display: flex; 
+    align-items: center;
+}
+
+.carousel-item-container {
+    display: flex; 
+    flex-direction: row;
+}
+
+.carousel-view {
+    overflow: hidden;
+}
+
+/*SLIDER CSS*/
+.carousel-item {
+    padding-top: 145px; 
+    padding-bottom: 145px; 
+    float: left; 
+    margin: auto; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; 
+    
+}
+
+/*images in slide show*/
+.carousel-image {
+    height: 500px; 
+    width: auto;
+    margin-left: 24px; 
+    margin-right: 12px;
+}
+/*text color*/
+.carousel-item-text > h1, .carousel-item-buynow > span, .carousel-item-trailer > span, .carousel-item-text > p {
+    color: white; 
+}
+.carousel-item-trailer > span, .carousel-item-buynow > span {
+    font-weight: bold;
+}
+
+/*text in slide show*/
+.carousel-item-text {
+    width: 50%; 
+    padding: 32px 32px 32px 32px; 
+}
+
+/*button*/
+.carousel-item-buynow, .carousel-item-trailer {
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+.carousel-item-buttons {
+    display: flex; 
+    flex-direction: row;
+}
+.carousel-item-buynow {
+    margin-right: 15px;
+}
+
+.carousel-item-trailer {
+    border: 1px solid white; 
+}
+
+.carousel-item-buynow > span > i {
+    font-size: 16px;
+}
+
+.carousel-item-background {
+  position: fixed;
+  margin-left: 0; 
+  margin-top: 0; 
+  z-index: -1;
+  height: 100%;
+  filter: blur(15px) brightness(75%);
+  background-size: 100%;
+}
+
+
+
+/* ARROW*/
+.prevArrow, .nextArrow {
+    position: absolute;
+    transform: scale(2);
+    z-index: 1; 
+}
+.prevArrow {
+    left: 3%;
+}
+
+.nextArrow {
+    right: 3%;
+}
+
+
+.nextArrow:hover, .prevArrow:hover {
+    cursor: pointer;
+    transform: scale(2.5);
+}
+
+.nextArrow > i:hover, .prevArrow > i:hover {
+    color: #65bcf6; 
+}
+
+.nextArrow > i, .prevArrow > i {
+    font-size: 25px;
+    opacity: 0.5;
+    color: white;  
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .carousel-item-text > h1, .carousel-item-buynow > span, .carousel-item-trailer > span, .carousel-item-text > p {
+    padding-left: 11%;
+    }
+    .carousel-item-buttons {
+    padding-left: 11%;
+    }
+   
+}
+@media only screen and (max-width: 900px) {
+    .carousel-item-text > h1, .carousel-item-buynow > span, .carousel-item-trailer > span, .carousel-item-text > p {
+    margin-left: 3%;
+    }
+    .carousel-item-buttons {
+    padding-left: 12%;
+    }
+     .slide-image {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .carousel-image {
+    height: 400px; 
+    width: auto;
+    margin-left: 24px; 
+    margin-right: 12px;
+    }
+    .carousel-item-text > h1, .buynow > span, .trailer > span, .carousel-item-text > p {
+    padding-left: 1%;
+    }
+    .carousel-item-buttons {
+    padding-left: 1%;
+    }
+}
